@@ -1,0 +1,39 @@
+World
+-Holds world info
+--Array
+---Ship
+---Enemies
+---Walls
+---Bullets
+--Load levels
+
+World Renderer
+-draws the world
+--camera
+--spritebatch
+--shape renderer for debugging
+-needs access to the world's objects to draw them
+
+World Controller
+-takes input and sends them to objects. May include handling touches and interfacing with
+--inputprocessor
+-needs access to the world's objects to control them
+
+Moveable Entities
+-Ship, bullets and enemies
+--Vector2 for position
+--Vector2 for velocity
+--speed
+--rectangle for collision detection
+--width
+--height
+--Enum Type for enemies and texture selection
+--rotation
+
+Stationary Entities
+-Walls and such
+--rectangle for collision
+--vector2 for position
+--width
+--height
+

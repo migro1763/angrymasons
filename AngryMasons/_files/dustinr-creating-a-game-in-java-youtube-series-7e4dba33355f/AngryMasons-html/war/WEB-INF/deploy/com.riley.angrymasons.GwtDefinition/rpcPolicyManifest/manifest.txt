@@ -1,0 +1,2 @@
+# Module com.riley.angrymasons.GwtDefinition
+# RPC service class, partial path of RPC policy file
