@@ -73,7 +73,7 @@ public class MainMenu implements Screen {
 			}
 			
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
-				game.setScreen(new Game(game));
+				game.setScreen(new GameScreen(game));
 				System.out.println("up");
 			}
 		});

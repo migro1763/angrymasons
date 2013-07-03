@@ -5,13 +5,13 @@ import com.migronomus.angrymasons.AngryMasons;
 import com.migronomus.angrymasons.View.World;
 import com.migronomus.angrymasons.View.WorldRenderer;
 
-public class Game implements Screen {
+public class GameScreen implements Screen {
 	
 	AngryMasons game;
 	World world;
 	WorldRenderer render;
 	
-	public Game(AngryMasons game) {
+	public GameScreen(AngryMasons game) {
 		this.game = game;
 		world = new World(game);
 		render = new WorldRenderer(world);

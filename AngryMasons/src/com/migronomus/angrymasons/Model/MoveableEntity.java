@@ -7,10 +7,11 @@ public abstract class MoveableEntity extends Entity {
 	protected float SPEED;
 	protected float rotation;
 
-	public MoveableEntity(float SPEED, float rotation, float width, float height, Vector2 position) {
+	public MoveableEntity(float speed, float rotation, float width, float height, Vector2 position) {
 		super(position, width, height);
-		this.SPEED = SPEED;
+		this.SPEED = speed;
 		this.rotation = rotation;
+		velocity = new Vector2(0, 0);
 	}
 	
 	public Vector2 getVelocity() {
